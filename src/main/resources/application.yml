@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: exe-shell
+  profiles:
+    active: dev

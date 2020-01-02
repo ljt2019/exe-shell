@@ -1,0 +1,26 @@
+server:
+  port: 8080
+  session:
+    timeout: -1
+
+management:
+  security:
+    enabled: false
+
+#  shell 命令参数
+shell:
+  path: /bin/sh
+  str: -c
+
+python:
+  path1: python3  /home/cw/code/dianbiao_crnn/dianbiao.py  #电表识别程序
+  path2: python3  /home/cw/code/fengedan/main.py  #分割单程序
+  path1Picture: /home/cw/code/dianbiao_crnn/original_picture/  #电表图片存放路径
+  path2Picture: /home/cw/code/fengedan/original_picture/  #分割单图片存放路径
+
+spring:
+  http:
+    multipart:
+      enabled: true
+      max-file-size: 51200MB
+      max-request-size: 51200MB
