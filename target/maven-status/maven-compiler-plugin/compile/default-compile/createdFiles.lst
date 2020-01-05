@@ -3,6 +3,7 @@ com\exe\shell\service\ExeShellService.class
 com\exe\shell\config\ShellString.class
 com\exe\shell\common\FileUtils.class
 com\exe\shell\controller\PythonController.class
+com\exe\shell\service\MyServlet.class
 com\exe\shell\service\impl\ExeShellServiceImpl.class
 com\exe\shell\common\JsonUtils.class
 com\exe\shell\controller\ExeShellController.class

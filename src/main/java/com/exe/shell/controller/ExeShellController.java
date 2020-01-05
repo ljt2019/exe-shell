@@ -29,7 +29,7 @@ public class ExeShellController {
     @GetMapping("/executeShell")
     @ApiOperation(value = "java执行 shell 命令-window", notes = "java执行 shell 命令")
     public AppResultObj executeShell(@RequestParam String shell, HttpServletRequest request) {
-        logger.info("===executeShell请求ip：【{}】, shell命令:【{}】", request.getRemoteHost(), shell);
+        logger.info("=== executeShell请求ip：【{}】, shell命令:【{}】", request.getRemoteHost(), shell);
         try {
             return exeShellService.executeShell(shell);
         } catch (Exception e) {
