@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
+@Api("java执行 shell 命令")
 @RestController
 @RequestMapping("/shell")
-@Api("java执行 shell 命令")
 public class ExeShellController {
 
     //    private static final Logger logger = LoggerFactory.getLogger(ExeShellController.class);
