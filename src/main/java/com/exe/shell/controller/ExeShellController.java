@@ -61,7 +61,7 @@ public class ExeShellController {
     public AppResultObj test(HttpServletRequest request) throws IOException {
 
         try {
-            logger.info("========测试接口，请求服务器ip：【{}】", request.getRemoteHost());
+            logger.info("======== 测试接口，请求服务器ip：【{}】", request.getRemoteHost());
             return AppResultObj.success("测试通过！");
         } catch (Exception e) {
             logger.info("========== 测试失败！ ==========【{}】", e.getMessage());
@@ -69,4 +69,8 @@ public class ExeShellController {
         }
     }
 
+    @RequestMapping("/k8s")
+    public String k8s() {
+        return "hello K8s <br/>111222 ";
+    }
 }
